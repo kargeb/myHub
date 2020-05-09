@@ -1,3 +1,32 @@
 .App {
+  display: flex;
+  height: 100vh;
+}
+
+main {
   text-align: center;
+  width: 70%;
+  height: 100%;
+  background-color: gray;
+}
+
+nav {
+  width: 30%;
+  height: 100%;
+  background-color: purple;
+  overflow: auto;
+}
+
+h1 {
+  height: 60px;
+}
+
+.container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: royalblue;
+  width: 100%;
+  height: calc(100% - 60px);
 }

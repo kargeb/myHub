@@ -29,7 +29,7 @@ class VideoList extends React.Component {
                 <Video
                   title={video.title}
                   description={video.description}
-                  video_url={video.video_url}
+                  videoUrl={video.videoUrl}
                 />
               </li>
             ))}

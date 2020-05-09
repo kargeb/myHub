@@ -1,15 +1,43 @@
-import React from 'react';
 import './App.css';
+import React from 'react';
+import ReactPlayer from 'react-player';
+
 import VideoList from './components/VideoList';
 
-function App() {
-  return (
-    <div className="App">
-      <p>dziala</p>
-      <p>Lista filmów:</p>
-      <VideoList />
-    </div>
-  );
+class App extends React.Component {
+  state = {
+    currentVideo: 'https://youtu.be/Bey4XXJAqS8',
+  };
+
+  render() {
+    const { currentVideo } = this.state;
+
+    return (
+      <div className="App">
+        <main>
+          <h1>Gramy</h1>
+          {currentVideo ? (
+            <>
+              <div className="container">
+                <ReactPlayer
+                  width="80%"
+                  height="80%"
+                  url={currentVideo}
+                  controls
+                />
+              </div>
+            </>
+          ) : (
+            <p>wyboerz co</p>
+          )}
+        </main>
+        <nav>
+          <h3>Videos</h3>
+          <VideoList />
+        </nav>
+      </div>
+    );
+  }
 }
 
 export default App;
