@@ -35,10 +35,12 @@ class App extends React.Component {
             <p>wyboerz co</p>
           )}
         </main>
-        <nav>
-          <h2>myHub</h2>
-          <VideoList setCurrentVideo={this.setCurrentVideo} />
-        </nav>
+        <aside>
+          <h1>myHub</h1>
+          <nav>
+            <VideoList setCurrentVideo={this.setCurrentVideo} />
+          </nav>
+        </aside>
       </div>
     );
   }
