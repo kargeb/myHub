@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactPlayer from 'react-player';
-import getThumbnail from '../helpers/getThumbnail';
+import getThumbnailUrl from '../helpers/getThumbnailUrl';
 import styles from './Video.module.css';
 
 const Videos = ({ title, description, url }) => {
-  const thumbnail = getThumbnail(url);
+  const thumbnail = getThumbnailUrl(url);
   console.log(thumbnail);
   const styleThumbnailContainer = {
     backgroundImage: `url(${thumbnail})`,

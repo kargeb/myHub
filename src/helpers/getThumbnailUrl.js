@@ -1,11 +1,9 @@
-const getThumbnail = (url) => {
+const getThumbnailUrl = (url) => {
   console.log('lnk:', url);
 
   let urlID = null;
 
   if (url.indexOf('youtu.be') > 0) {
-    console.log('inniosc linkowa');
-
     const pattern = 'youtu.be/';
 
     const startOfCut = url.indexOf(pattern);
@@ -36,4 +34,4 @@ const getThumbnail = (url) => {
   // );
 };
 
-export default getThumbnail;
+export default getThumbnailUrl;
