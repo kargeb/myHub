@@ -7,29 +7,7 @@ const Videos = ({ title, description, url }) => {
     <div style={{ textAlign: 'center' }}>
       <h3>{title}</h3>
       <p>{description}</p>
-      <a target="_blank" rel="noopener noreferrer" href={url}>
-        {url}
-      </a>
-      {/* <div
-        style={{
-          width: '150px',
-          height: '150px',
-          // overflow: 'hidden',
-          border: '4px solid black',
-        }}
-      > */}
       <GetThumbnail link={url} />
-      {/* </div> */}
-      {/* <div
-        style={{
-          width: '200px',
-          height: '300px',
-          backgroundColor: 'blue',
-          position: 'relative',
-        }}
-      >
-        <ReactPlayer width="100%" height="100%" url={url} controls />
-      </div> */}
     </div>
   );
 };
