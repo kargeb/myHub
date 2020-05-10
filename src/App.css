@@ -17,10 +17,6 @@ nav {
   overflow: auto;
 }
 
-h1 {
-  height: 60px;
-}
-
 .container {
   margin: 0 auto;
   display: flex;
@@ -28,5 +24,5 @@ h1 {
   align-items: center;
   background-color: royalblue;
   width: 100%;
-  height: calc(100% - 60px);
+  height: 100%;
 }

@@ -1,15 +1,26 @@
 import React from 'react';
 import ReactPlayer from 'react-player';
+import GetThumbnail from '../helpers/GetThumbnail';
 
 const Videos = ({ title, description, videoUrl }) => {
   return (
-    <div>
+    <div style={{ textAlign: 'center' }}>
       <h3>{title}</h3>
       <p>{description}</p>
       <a target="_blank" rel="noopener noreferrer" href={videoUrl}>
         {videoUrl}
       </a>
-      <div
+      {/* <div
+        style={{
+          width: '150px',
+          height: '150px',
+          // overflow: 'hidden',
+          border: '4px solid black',
+        }}
+      > */}
+      <GetThumbnail link={videoUrl} />
+      {/* </div> */}
+      {/* <div
         style={{
           width: '200px',
           height: '300px',
@@ -18,7 +29,7 @@ const Videos = ({ title, description, videoUrl }) => {
         }}
       >
         <ReactPlayer width="100%" height="100%" url={videoUrl} controls />
-      </div>
+      </div> */}
     </div>
   );
 };

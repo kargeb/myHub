@@ -15,7 +15,6 @@ class App extends React.Component {
     return (
       <div className="App">
         <main>
-          <h1>Gramy</h1>
           {currentVideo ? (
             <>
               <div className="container">
@@ -32,7 +31,7 @@ class App extends React.Component {
           )}
         </main>
         <nav>
-          <h3>Videos</h3>
+          <h2>myHub</h2>
           <VideoList />
         </nav>
       </div>
