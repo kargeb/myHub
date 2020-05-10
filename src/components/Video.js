@@ -1,13 +1,22 @@
 import React from 'react';
 import ReactPlayer from 'react-player';
-import GetThumbnail from '../helpers/GetThumbnail';
+import getThumbnail from '../helpers/getThumbnail';
+import styles from './Video.module.css';
 
 const Videos = ({ title, description, url }) => {
+  const thumbnail = getThumbnail(url);
+  console.log(thumbnail);
+  const styleThumbnailContainer = {
+    backgroundImage: `url(${thumbnail})`,
+  };
+
   return (
-    <div style={{ textAlign: 'center' }}>
-      <h3>{title}</h3>
-      <p>{description}</p>
-      <GetThumbnail link={url} />
+    <div className={styles.wrapper}>
+      <div className={styles.thumbnail} style={styleThumbnailContainer} />
+      <div className={styles.textContainer}>
+        <h3 className={styles.title}>{title}</h3>
+        <p className={styles.description}>{description}</p>
+      </div>
     </div>
   );
 };

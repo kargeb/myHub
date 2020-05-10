@@ -4,40 +4,46 @@
 }
 
 main {
-  text-align: center;
-  width: 70%;
+  display: flex;
+
+  /* margin: 0 auto; */
+  justify-content: center;
+  align-items: center;
+
+  width: 75%;
   height: 100%;
-  /* background-color: gray; */
+  background-color: saddlebrown;
+}
+
+aside {
+  width: 25%;
+  height: 100%;
+  background-color: rosybrown;
+}
+
+h1 {
+  font-size: 30px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 nav {
-  width: 30%;
-  height: 100%;
-  /* background-color: purple; */
+  height: calc(100% - 110px);
+  width: 100%;
+  padding: 10px;
+  background-color: red;
   overflow: auto;
 }
 
-nav li {
-  background-color: rgba(255, 255, 255, 0.3);
-  opacity: 0.8;
-  /* border: 1px solid white; */
-  border-radius: 40px;
-  margin-bottom: 20px;
-}
-
-nav li:hover {
-  /* border: 1px solid red; */
-  background-color: rgba(255, 255, 255, 0.5);
-  cursor: pointer;
-  opacity: 1;
-}
-
 .container {
-  margin: 5% auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* background-color: royalblue; */
+  /* display: flex; */
+
+  /* margin: 0 auto; */
+  /* justify-content: center;
+  align-items: center; */
+  background-color: royalblue;
   width: 80%;
   height: 80%;
   border-radius: 25px;
