@@ -9,6 +9,11 @@ class App extends React.Component {
     currentVideo: 'https://youtu.be/Bey4XXJAqS8',
   };
 
+  setCurrentVideo = (url) => {
+    console.log('curent url:', url);
+    this.setState({ currentVideo: url });
+  };
+
   render() {
     const { currentVideo } = this.state;
 
@@ -19,8 +24,8 @@ class App extends React.Component {
             <>
               <div className="container">
                 <ReactPlayer
-                  width="80%"
-                  height="80%"
+                  width="100%"
+                  height="100%"
                   url={currentVideo}
                   controls
                 />
@@ -32,7 +37,7 @@ class App extends React.Component {
         </main>
         <nav>
           <h2>myHub</h2>
-          <VideoList />
+          <VideoList setCurrentVideo={this.setCurrentVideo} />
         </nav>
       </div>
     );

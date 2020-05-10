@@ -2,13 +2,13 @@ import React from 'react';
 import ReactPlayer from 'react-player';
 import GetThumbnail from '../helpers/GetThumbnail';
 
-const Videos = ({ title, description, videoUrl }) => {
+const Videos = ({ title, description, url }) => {
   return (
     <div style={{ textAlign: 'center' }}>
       <h3>{title}</h3>
       <p>{description}</p>
-      <a target="_blank" rel="noopener noreferrer" href={videoUrl}>
-        {videoUrl}
+      <a target="_blank" rel="noopener noreferrer" href={url}>
+        {url}
       </a>
       {/* <div
         style={{
@@ -18,7 +18,7 @@ const Videos = ({ title, description, videoUrl }) => {
           border: '4px solid black',
         }}
       > */}
-      <GetThumbnail link={videoUrl} />
+      <GetThumbnail link={url} />
       {/* </div> */}
       {/* <div
         style={{
@@ -28,7 +28,7 @@ const Videos = ({ title, description, videoUrl }) => {
           position: 'relative',
         }}
       >
-        <ReactPlayer width="100%" height="100%" url={videoUrl} controls />
+        <ReactPlayer width="100%" height="100%" url={url} controls />
       </div> */}
     </div>
   );

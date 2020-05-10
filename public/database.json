@@ -1,21 +1,18 @@
 [
     {
-      "id": 1,
       "title": "Mój ulubiony filmik 1",
       "description": "Opis mojego ulubionego filmiku",
-      "videoUrl": "https://youtu.be/Bey4XXJAqS8"
+      "url": "https://youtu.be/Bey4XXJAqS8"
     },
     {
-      "id": 2,
       "title": "Mój ulubiony filmik 2",
       "description": "Opis mojego ulubionego filmiku 2",
-      "videoUrl": "https://www.youtube.com/watch?v=wvOmx9e4l2o"
+      "url": "https://www.youtube.com/watch?v=wvOmx9e4l2o"
     },
     {
-      "id": 2,
       "title": "Z Vimeo",
       "description": "test z vimeo",
-      "videoUrl": "https://vimeo.com/124407907"
+      "url": "https://vimeo.com/124407907"
     }
   ]
   

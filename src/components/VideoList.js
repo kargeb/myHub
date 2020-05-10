@@ -19,17 +19,23 @@ class VideoList extends React.Component {
 
   render() {
     const { videos } = this.state;
+    const { setCurrentVideo } = this.props;
 
     return (
       <div>
         <ul>
           {videos.length &&
             videos.map((video) => (
-              <li key={video.id}>
+              <li
+                key={video.url}
+                onClick={() => {
+                  setCurrentVideo(video.url);
+                }}
+              >
                 <Video
                   title={video.title}
                   description={video.description}
-                  videoUrl={video.videoUrl}
+                  url={video.url}
                 />
               </li>
             ))}
