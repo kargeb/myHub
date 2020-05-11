@@ -1,9 +1,9 @@
 import './App.css';
 import React from 'react';
-import ReactPlayer from 'react-player';
 import logo from './images/Logo.svg';
 
-import VideoList from './components/VideoList';
+import VideoList from './components/videoList/VideoList';
+import PlayerView from './components/playerView/PlayerView';
 
 class App extends React.Component {
   state = {
@@ -17,7 +17,6 @@ class App extends React.Component {
   };
 
   setCurrentVideo = (url) => {
-    console.log('curent url:', url);
     this.setState({ currentVideo: url });
   };
 
@@ -28,28 +27,14 @@ class App extends React.Component {
       <div className="App">
         <main>
           {currentVideo ? (
-            <>
-              <div className="video-container">
-                <div className="container">
-                  <ReactPlayer
-                    className="react-player"
-                    width="100%"
-                    height="100%"
-                    url={currentVideo.url}
-                    controls
-                  />
-                </div>
-              </div>
-              <h2 className="ha2">{currentVideo.title}</h2>
-              <p className="main-desc">{currentVideo.description}</p>
-            </>
+            <PlayerView currentVideo={currentVideo} />
           ) : (
-            <p>wyboerz co</p>
+            <p>wybierz wideo</p>
           )}
         </main>
         <aside>
           <h1>
-            <img src={logo} />{' '}
+            <img src={logo} alt="myTube" />
           </h1>
           <nav>
             <VideoList setCurrentVideo={this.setCurrentVideo} />

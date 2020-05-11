@@ -1,6 +1,5 @@
 import React from 'react';
-import ReactPlayer from 'react-player';
-import getThumbnailUrl from '../helpers/getThumbnailUrl';
+import getThumbnailUrl from '../../helpers/getThumbnailUrl';
 import styles from './Video.module.scss';
 
 const Videos = ({ title, description, url, active }) => {
@@ -25,5 +24,3 @@ const Videos = ({ title, description, url, active }) => {
 };
 
 export default Videos;
-
-// https://www.youtube.com/embed/bTqVqk7FSmY?origin=https://plyr.io&iv_load_policy=3&modestbranding=1&playsinline=1&showinfo=0&rel=0&enablejsapi=1

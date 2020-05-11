@@ -8,24 +8,13 @@ ul {
 }
 
 main {
-  /* display: flex;
-  flex-direction: column; */
-  /* padding: 100px 100px 200px 100px; */
-  /* margin: 0 auto; */
-  /* justify-content: center;
-  align-items: center; */
-
   width: calc(100% - 350px);
-  /* min-width: 700px; */
   height: 100%;
-  /* background-color: saddlebrown; */
 }
 
 aside {
-  /* width: 25%; */
   width: 350px;
   height: 100%;
-  /* background-color: rosybrown; */
 }
 
 h1 {
@@ -41,59 +30,7 @@ nav {
   height: calc(100% - 130px);
   width: 100%;
   padding: 10px 20px;
-  /* background-color: red; */
   overflow: auto;
   border-top: 1px solid white;
   border-bottom: 1px solid white;
-}
-
-.ha2 {
-  /* display: inline-block; */
-  color: white;
-  font-size: 30px;
-  /* background-color: tomato; */
-  /* margin-top: 35px;
-  margin-bottom: 15px; */
-  text-align: left;
-  margin: 35px auto 15px;
-  width: 60%;
-}
-
-.main-desc {
-  color: white;
-  text-align: left;
-  margin: 0 auto;
-  width: 60%;
-}
-
-.video-container {
-  margin: 100px auto 0;
-  background-color: green;
-  /* padding: 100px; */
-  /* height: 20vh; */
-  max-width: 60%;
-  /* height: 100px; */
-  overflow: hidden;
-}
-
-.container {
-  position: relative;
-  padding-top: 56.25%;
-  /* margin: 100px auto 0; */
-  /* background-color: royalblue; */
-  /* width: 60%; */
-  /* height: 60%; */
-  /* display: flex; */
-  /* margin: 0 auto; */
-  /* justify-content: center;
-  align-items: center; */
-  /* border-radius: 25px;
-  overflow: hidden; */
-  box-shadow: 0px 8.0766px 11.0702px rgba(0, 0, 0, 0.5);
-}
-
-.react-player {
-  position: absolute;
-  top: 0;
-  left: 0;
 }

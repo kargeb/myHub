@@ -1,0 +1,32 @@
+.videoContainer {
+  margin: 100px auto 0;
+  max-width: 60%;
+  box-shadow: 0px 8.0766px 11.0702px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+.container {
+  position: relative;
+  padding-top: 56.25%;
+}
+
+.reactPlayer {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.h2 {
+  color: white;
+  font-size: 30px;
+  text-align: left;
+  margin: 35px auto 15px;
+  width: 60%;
+}
+
+.description {
+  color: white;
+  text-align: left;
+  margin: 0 auto;
+  width: 60%;
+}
