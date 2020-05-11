@@ -29,7 +29,7 @@ class VideoList extends React.Component {
               <li
                 key={video.url}
                 onClick={() => {
-                  setCurrentVideo(video.url);
+                  setCurrentVideo(video);
                 }}
               >
                 <Video

@@ -7,7 +7,11 @@ import VideoList from './components/VideoList';
 
 class App extends React.Component {
   state = {
-    currentVideo: 'https://youtu.be/Bey4XXJAqS8',
+    currentVideo: {
+      title: 'Mój ulubiony filmik 1',
+      description: 'Opis mojego ulubionego filmiku',
+      url: 'https://youtu.be/Bey4XXJAqS8',
+    },
   };
 
   setCurrentVideo = (url) => {
@@ -29,15 +33,12 @@ class App extends React.Component {
                     className="react-player"
                     width="100%"
                     height="100%"
-                    url={currentVideo}
+                    url={currentVideo.url}
                     controls
                   />
                 </div>
-                <h2 className="ha2">TYTUŁ</h2>
-                <p className="main-desc">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo
-                  fugiat possimus vitae odit sed et.
-                </p>
+                <h2 className="ha2">{currentVideo.title}</h2>
+                <p className="main-desc">{currentVideo.description}</p>
               </div>
             </>
           ) : (

@@ -26,12 +26,6 @@ const getThumbnailUrl = (url) => {
   const thumbnailCreatorUrl = `http://i3.ytimg.com/vi/${urlID}/maxresdefault.jpg`;
 
   return thumbnailCreatorUrl;
-
-  // return (
-  //   <div>
-  //     <img width="50%" src={thumbnailCreatorUrl} />;
-  //   </div>
-  // );
 };
 
 export default getThumbnailUrl;

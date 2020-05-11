@@ -5,7 +5,7 @@ import styles from './Video.module.css';
 
 const Videos = ({ title, description, url }) => {
   const thumbnail = getThumbnailUrl(url);
-  console.log(thumbnail);
+
   const styleThumbnailContainer = {
     backgroundImage: `url(${thumbnail})`,
   };
