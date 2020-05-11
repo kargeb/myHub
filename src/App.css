@@ -3,6 +3,10 @@
   height: 100vh;
 }
 
+ul {
+  list-style: none;
+}
+
 main {
   /* display: flex; */
   /* padding: 100px 100px 200px 100px; */
@@ -10,19 +14,21 @@ main {
   /* justify-content: center;
   align-items: center; */
 
-  width: 75%;
+  width: calc(100% - 350px);
   /* min-width: 700px; */
   height: 100%;
-  background-color: saddlebrown;
+  /* background-color: saddlebrown; */
 }
 
 aside {
-  width: 25%;
+  /* width: 25%; */
+  width: 350px;
   height: 100%;
-  background-color: rosybrown;
+  /* background-color: rosybrown; */
 }
 
 h1 {
+  padding-right: 20px;
   font-size: 30px;
   height: 100px;
   display: flex;
@@ -31,18 +37,25 @@ h1 {
 }
 
 nav {
-  height: calc(100% - 110px);
+  height: calc(100% - 130px);
   width: 100%;
-  padding: 10px;
-  background-color: red;
+  padding: 10px 20px;
+  /* background-color: red; */
   overflow: auto;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
 }
 
 .ha2 {
+  color: white;
   font-size: 30px;
-  margin-top: 20px;
-  margin-bottom: 10px;
+  margin-top: 35px;
+  margin-bottom: 15px;
   text-align: left;
+}
+
+.main-desc {
+  color: white;
 }
 
 .video-container {
@@ -58,7 +71,7 @@ nav {
   position: relative;
   padding-top: 56.25%;
   /* margin: 100px auto 0; */
-  background-color: royalblue;
+  /* background-color: royalblue; */
   /* width: 60%; */
   /* height: 60%; */
   /* display: flex; */
@@ -67,6 +80,7 @@ nav {
   align-items: center; */
   /* border-radius: 25px;
   overflow: hidden; */
+  box-shadow: 0px 12.0766px 11.0702px rgba(0, 0, 0, 0.5);
 }
 
 .react-player {

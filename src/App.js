@@ -1,6 +1,7 @@
 import './App.css';
 import React from 'react';
 import ReactPlayer from 'react-player';
+import logo from './images/Logo.svg';
 
 import VideoList from './components/VideoList';
 
@@ -33,7 +34,7 @@ class App extends React.Component {
                   />
                 </div>
                 <h2 className="ha2">TYTUŁ</h2>
-                <p>
+                <p className="main-desc">
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo
                   fugiat possimus vitae odit sed et.
                 </p>
@@ -44,7 +45,9 @@ class App extends React.Component {
           )}
         </main>
         <aside>
-          <h1>myHub</h1>
+          <h1>
+            <img src={logo} />{' '}
+          </h1>
           <nav>
             <VideoList setCurrentVideo={this.setCurrentVideo} />
           </nav>

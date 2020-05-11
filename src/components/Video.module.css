@@ -6,6 +6,8 @@
   margin-bottom: 40px;
   color: black;
   background-color: white;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.33);
+  cursor: pointer;
 }
 
 .thumbnail {
