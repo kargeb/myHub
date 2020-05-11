@@ -22,13 +22,21 @@ class App extends React.Component {
         <main>
           {currentVideo ? (
             <>
-              <div className="container">
-                <ReactPlayer
-                  width="100%"
-                  height="100%"
-                  url={currentVideo}
-                  controls
-                />
+              <div className="video-container">
+                <div className="container">
+                  <ReactPlayer
+                    className="react-player"
+                    width="100%"
+                    height="100%"
+                    url={currentVideo}
+                    controls
+                  />
+                </div>
+                <h2 className="ha2">TYTUŁ</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo
+                  fugiat possimus vitae odit sed et.
+                </p>
               </div>
             </>
           ) : (
