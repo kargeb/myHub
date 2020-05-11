@@ -3,34 +3,34 @@
       "title": "Mój ulubiony filmik 1",
       "description": "Opis mojego ulubionego filmiku",
       "url": "https://youtu.be/Bey4XXJAqS8",
-      "active": true
-    },
-    {
-      "title": "Mój k 2",
-      "description": "Opis mojego ulubionego filmiku 2",
-      "url": "https://www.youtube.com/watch?v=wvOmx9e4l2o",
       "active": false
     },
     {
-      "title": "Mój 3",
-      "description": "Opis mojego ulubionego filmiku 3",
+      "title": "Szkoła Reacta - Formularze",
+      "description": "Jeżeli jesteś programista / programistką i programujesz w ReactJS, to wideo pomoże Ci zacząć korzystać z formularzy. ",
+      "url": "https://www.youtube.com/watch?v=wvOmx9e4l2o",
+      "active": true
+    },
+    {
+      "title": "Wes Bos Flexbox",
+      "description": "t's key to understand the main and cross axes in flexbox. Switch the layout from row to column with flex-direction.",
       "url": "https://www.youtube.com/watch?v=_vEjcueG3zY",
       "active": false
     },
     {
-      "title": "Mój 4",
+      "title": "Ulubiony 4",
       "description": "Opis mojego ulubionego filmiku 2",
       "url": "https://www.youtube.com/watch?v=5qky3L2Q6G4",
       "active": false
     },
     {
-      "title": "Mój 5",
+      "title": "Ulubiony 5",
       "description": "Opis mojego ulubionego filmiku 2",
       "url": "https://www.youtube.com/watch?v=TYBN9VR3F2E",
       "active": false
     },
     {
-      "title": "Mój 6",
+      "title": "Ulubiony 6",
       "description": "Opis mojego ulubionego filmiku 2",
       "url": "https://www.youtube.com/watch?v=ZoBZoJ8Udw4",
       "active": false

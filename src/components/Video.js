@@ -11,13 +11,14 @@ const Videos = ({ title, description, url, active }) => {
   };
 
   const styleActive = { opacity: '0.6', backgroundColor: 'grey' };
+  const shortDescription = description.substring(0, 55);
 
   return (
     <div className={styles.wrapper} style={active ? styleActive : {}}>
       <div className={styles.thumbnail} style={styleThumbnailContainer} />
       <div className={styles.textContainer}>
         <h3 className={styles.title}>{title}</h3>
-        <p className={styles.description}>{description}</p>
+        <p className={styles.description}>{shortDescription}</p>
       </div>
     </div>
   );

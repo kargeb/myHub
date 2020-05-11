@@ -8,9 +8,11 @@ import VideoList from './components/VideoList';
 class App extends React.Component {
   state = {
     currentVideo: {
-      title: 'Mój ulubiony filmik 1',
-      description: 'Opis mojego ulubionego filmiku',
-      url: 'https://youtu.be/Bey4XXJAqS8',
+      title: 'Szkoła Reacta - Formularze',
+      description:
+        'Jeżeli jesteś programista / programistką i programujesz w ReactJS, to wideo pomoże Ci zacząć korzystać z formularzy. ',
+      url: 'https://www.youtube.com/watch?v=wvOmx9e4l2o',
+      active: true,
     },
   };
 
@@ -37,9 +39,9 @@ class App extends React.Component {
                     controls
                   />
                 </div>
-                <h2 className="ha2">{currentVideo.title}</h2>
-                <p className="main-desc">{currentVideo.description}</p>
               </div>
+              <h2 className="ha2">{currentVideo.title}</h2>
+              <p className="main-desc">{currentVideo.description}</p>
             </>
           ) : (
             <p>wyboerz co</p>

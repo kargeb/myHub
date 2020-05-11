@@ -9,11 +9,13 @@
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.33);
   cursor: pointer;
   transition: all 0.1s;
+  // overflow: hidden;
 
   &:hover {
     transform: scale(1.1) rotate(-5deg);
     // color: red;
     // opacity: 0.5;
+    // overflow: hidden;
   }
 }
 
@@ -43,4 +45,6 @@
   font-size: 13px;
   text-align: left;
   padding: 10px 15px;
+  height: 100%;
+  overflow: hidden;
 }
